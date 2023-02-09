@@ -1,0 +1,450 @@
+/* ------ Specification ------ */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #6c7279;
+}
+
+p {
+	margin: 0;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+a {
+  outline: none;
+}
+
+a, div {
+  transition: all 0.5s ease;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 200px;
+  padding: 14px 0 12px;
+  border: none;
+  border-radius: 2px;
+  background: #e84545;
+}
+
+.btn:hover {
+  background: #de2727;
+  color: #fff;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+/* ------ First Screen ------ */
+
+.header {
+  background: #363640 url('../img/first-bg.jpg') no-repeat center top / cover;
+  padding: 26px 0 243px;
+  color: #fff;
+}
+
+.logo {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.logo span {
+  font-weight: 700;
+  color: #626fe4;
+}
+
+.menu__link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  border-bottom: 3px solid transparent;
+}
+
+.menu__item:not(:last-child) .menu__link {
+  padding: 15px 34.5px 36px;
+}
+
+.menu__item:last-child .menu__link {
+  padding: 15px 0 36px 34.5px;
+}
+
+.menu__link:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu__link:active {
+  border-color: #fff;
+}
+
+.offer {
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.15);
+  padding-top: 177px;
+}
+
+.offer__text {
+  font-size: 22px;
+  max-width: 570px;
+  margin: 35px auto 28px;
+}
+
+/* ------ Features ------ */
+
+.features {
+  padding: 121px 0 24px;
+}
+
+.feature {
+  margin-bottom: 73px;
+}
+
+.feature__img {
+  height: 60px;
+  object-fit: contain;
+}
+
+.feature__title {
+  color: #2d3033;
+  margin: 31px 0 18px;
+}
+
+.feature__text {
+  max-width: 325px;
+  margin: 0 auto;
+}
+
+/* ------ Works ------ */
+
+.works {
+  padding: 24px 0 102px;
+}
+
+.work {
+  position: relative;
+  max-width: 263px;
+  margin: 0 auto 27px;
+}
+
+.work__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.work__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(232, 69, 69, 0.9);
+  color: #fff;
+  opacity: 0;
+}
+
+.work__link {
+  color: #fff;
+  display: block;
+  margin-top: 6px;
+}
+
+.work__link:hover {
+  color: #fff;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+}
+
+.work__link:active {
+  box-shadow: 0px 1px 0px 0px #fff;
+}
+
+.work:hover .work__overlay {
+  opacity: 1;
+}
+
+/* ------ Team ------ */
+
+.team {
+  padding: 125px 0 116px;
+  background: rgba(98, 111, 228, 0.09);
+}
+
+.employee__img {
+  width: 100%;
+  max-width: 263px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.employee__title {
+  color: #2d3033;
+  margin: 25px 0 22px;
+}
+
+.employee__subtitle {
+  font-weight: 400;
+  font-size: 13px;
+  color: #e84545;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 9px;
+}
+
+.employee__socials {
+  width: 128px;
+  margin-top: 26px;
+}
+
+.employee__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e8ecee;
+}
+
+.employee__link_facebook {
+  background: #fff url('../img/facebook.png') no-repeat center;
+}
+
+.employee__link_twitter {
+  background: #fff url('../img/twitter.png') no-repeat center;
+}
+
+.employee__link_instagram {
+  background: #fff url('../img/instagram.png') no-repeat center;
+}
+
+.employee__link:hover {
+  box-shadow: 2px 5px 5px rgba(198, 202, 204, 0.8);
+}
+
+.employee__link:active {
+  box-shadow: 2px 1px 3px rgba(198, 202, 204, 0.9);
+}
+
+/* ------ Clients ------ */
+
+.client {
+  background: #ded0c5 url('../img/client.jpg') no-repeat top right / cover;
+  height: 100%;
+}
+
+.quote {
+  padding: 131px 69px 153px;
+  background: #53354a;
+  color: #fff;
+}
+
+.quote__text {
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.17em;
+  margin-bottom: 32px;
+  max-width: 530px;
+}
+
+/* ------ Download ------ */
+
+.download {
+  padding: 94px 0 100px;
+  color: #2d3033;
+}
+
+.start__text {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 10px 0 36px;
+}
+
+.start__btn {
+  width: 280px;
+}
+
+/* ------ Footer ------ */
+
+.footer {
+  padding: 82px 0 70px;
+  background: #3a3e64;
+  border-bottom: 12px solid #313454;
+}
+
+.detail {
+  max-width: 340px;
+}
+
+.detail__title {
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.detail__text {
+  line-height: 1.6em;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+}
+
+.detail_location .detail__text {
+  max-width: 160px;
+}
+
+.detail_share .detail__text {
+  color: #808080;
+}
+
+.detail_share .detail__text span:first-child {
+  color: #e84545;
+}
+
+.detail_share .detail__text span:last-child {
+  color: #fff;
+}
+
+/* ------ Media Queries ------ */
+
+/* 992 - 1200 */
+@media screen and (max-width: 1199px) {
+  .quote {
+    padding: 91px 50px 113px;
+  }
+}
+
+/* 768-992 */
+@media screen and (max-width: 991px) {
+  .header {
+    padding-bottom: 195px;
+  }
+  .menu {
+    margin-top: 10px;
+  }
+  .offer {
+    padding-top: 140px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .offer__text {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .team {
+    padding-bottom: 51px;
+  }
+  .employee {
+    margin-bottom: 70px;
+  }
+  .client {
+    height: 400px;
+  }
+  .quote__text {
+    font-size: 32px;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+/* 576-768 */
+@media screen and (max-width: 767px) {
+  .header {
+    padding-bottom: 160px;
+  }
+  .offer {
+    padding-top: 110px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .offer__text {
+    font-size: 17px;
+  }
+  .features {
+    padding: 80px 0 10px;
+  }
+  .works {
+    padding: 10px 0 70px;
+  }
+  .team {
+    padding-top: 70px;
+  }
+  .client {
+    height: 300px;
+  }
+  .quote {
+    padding: 55px 40px 70px;
+  }
+  .quote__text {
+    font-size: 29px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
+
+/* 320-576 */
+@media screen and (max-width: 575px) {
+  .header {
+    padding-bottom: 140px;
+  }
+  .offer {
+    padding-top: 90px;
+  }
+  .start__btn {
+    width: 240px;
+  }
+}
